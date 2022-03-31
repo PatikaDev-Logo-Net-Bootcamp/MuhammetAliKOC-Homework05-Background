@@ -1,0 +1,276 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\pceng\\Desktop\\Odev5\\Homework05\\Homework05-Business\\Homework05-Business.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\pceng\\Desktop\\Odev5\\Homework05\\Homework05-Business\\Homework05-Business.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\pceng\\Desktop\\Odev5\\Homework05\\Homework05-Business\\Homework05-Business.csproj",
+        "projectName": "Homework05-Business",
+        "projectPath": "C:\\Users\\pceng\\Desktop\\Odev5\\Homework05\\Homework05-Business\\Homework05-Business.csproj",
+        "packagesPath": "C:\\Users\\pceng\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\pceng\\Desktop\\Odev5\\Homework05\\Homework05-Business\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\pceng\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\pceng\\Desktop\\Odev5\\Homework05\\Homework05-DataAccess.Entityframework.Repository\\Homework05-DataAccess.Entityframework.Repository.csproj": {
+                "projectPath": "C:\\Users\\pceng\\Desktop\\Odev5\\Homework05\\Homework05-DataAccess.Entityframework.Repository\\Homework05-DataAccess.Entityframework.Repository.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\pceng\\Desktop\\Odev5\\Homework05\\Homework05-DataAccess.Entityframework.Repository\\Homework05-DataAccess.Entityframework.Repository.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\pceng\\Desktop\\Odev5\\Homework05\\Homework05-DataAccess.Entityframework.Repository\\Homework05-DataAccess.Entityframework.Repository.csproj",
+        "projectName": "Homework05-DataAccess.Entityframework.Repository",
+        "projectPath": "C:\\Users\\pceng\\Desktop\\Odev5\\Homework05\\Homework05-DataAccess.Entityframework.Repository\\Homework05-DataAccess.Entityframework.Repository.csproj",
+        "packagesPath": "C:\\Users\\pceng\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\pceng\\Desktop\\Odev5\\Homework05\\Homework05-DataAccess.Entityframework.Repository\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\pceng\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\pceng\\Desktop\\Odev5\\Homework05\\Homework05-DataAccess.EntityFramework\\Homework05-DataAccess.EntityFramework.csproj": {
+                "projectPath": "C:\\Users\\pceng\\Desktop\\Odev5\\Homework05\\Homework05-DataAccess.EntityFramework\\Homework05-DataAccess.EntityFramework.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\pceng\\Desktop\\Odev5\\Homework05\\Homework05-DataAccess.EntityFramework\\Homework05-DataAccess.EntityFramework.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\pceng\\Desktop\\Odev5\\Homework05\\Homework05-DataAccess.EntityFramework\\Homework05-DataAccess.EntityFramework.csproj",
+        "projectName": "Homework05-DataAccess.EntityFramework",
+        "projectPath": "C:\\Users\\pceng\\Desktop\\Odev5\\Homework05\\Homework05-DataAccess.EntityFramework\\Homework05-DataAccess.EntityFramework.csproj",
+        "packagesPath": "C:\\Users\\pceng\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\pceng\\Desktop\\Odev5\\Homework05\\Homework05-DataAccess.EntityFramework\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\pceng\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\pceng\\Desktop\\Odev5\\Homework05\\Homework05-Domain\\Homework05-Domain.csproj": {
+                "projectPath": "C:\\Users\\pceng\\Desktop\\Odev5\\Homework05\\Homework05-Domain\\Homework05-Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.15, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.15, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.15, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\pceng\\Desktop\\Odev5\\Homework05\\Homework05-Domain\\Homework05-Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\pceng\\Desktop\\Odev5\\Homework05\\Homework05-Domain\\Homework05-Domain.csproj",
+        "projectName": "Homework05-Domain",
+        "projectPath": "C:\\Users\\pceng\\Desktop\\Odev5\\Homework05\\Homework05-Domain\\Homework05-Domain.csproj",
+        "packagesPath": "C:\\Users\\pceng\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\pceng\\Desktop\\Odev5\\Homework05\\Homework05-Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\pceng\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

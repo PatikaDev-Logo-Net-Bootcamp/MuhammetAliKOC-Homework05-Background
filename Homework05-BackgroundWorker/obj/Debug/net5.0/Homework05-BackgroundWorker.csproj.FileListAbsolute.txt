@@ -44,4 +44,3 @@ C:\Users\pceng\Desktop\Odev5\Homework05\Homework05-BackgroundWorker\obj\Debug\ne
 C:\Users\pceng\Desktop\Odev5\Homework05\Homework05-BackgroundWorker\obj\Debug\net5.0\ref\Homework05-BackgroundWorker.dll
 C:\Users\pceng\Desktop\Odev5\Homework05\Homework05-BackgroundWorker\obj\Debug\net5.0\Homework05-BackgroundWorker.pdb
 C:\Users\pceng\Desktop\Odev5\Homework05\Homework05-BackgroundWorker\obj\Debug\net5.0\Homework05-BackgroundWorker.genruntimeconfig.cache
-C:\Users\pceng\Desktop\Odev5\Homework05\Homework05-BackgroundWorker\obj\Debug\net5.0\Homework05-BackgroundWorker.csproj.AssemblyReference.cache
