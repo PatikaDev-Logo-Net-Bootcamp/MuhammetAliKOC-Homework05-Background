@@ -1,0 +1,11 @@
+﻿{
+  "profiles": {
+    "Homework05_BackgroundWorker": {
+      "commandName": "Project",
+      "dotnetRunMessages": "true",
+      "environmentVariables": {
+        "DOTNET_ENVIRONMENT": "Development"
+      }
+    }
+  }
+}
