@@ -1,0 +1,17 @@
+C:\Users\pceng\Desktop\Odev5\Homework05\Homework05-DataAccess.Entityframework.Repository\bin\Debug\net5.0\Homework05-DataAccess.Entityframework.Repository.deps.json
+C:\Users\pceng\Desktop\Odev5\Homework05\Homework05-DataAccess.Entityframework.Repository\bin\Debug\net5.0\Homework05-DataAccess.Entityframework.Repository.dll
+C:\Users\pceng\Desktop\Odev5\Homework05\Homework05-DataAccess.Entityframework.Repository\bin\Debug\net5.0\ref\Homework05-DataAccess.Entityframework.Repository.dll
+C:\Users\pceng\Desktop\Odev5\Homework05\Homework05-DataAccess.Entityframework.Repository\bin\Debug\net5.0\Homework05-DataAccess.Entityframework.Repository.pdb
+C:\Users\pceng\Desktop\Odev5\Homework05\Homework05-DataAccess.Entityframework.Repository\bin\Debug\net5.0\Homework05-DataAccess.EntityFramework.dll
+C:\Users\pceng\Desktop\Odev5\Homework05\Homework05-DataAccess.Entityframework.Repository\bin\Debug\net5.0\Homework05-Domain.dll
+C:\Users\pceng\Desktop\Odev5\Homework05\Homework05-DataAccess.Entityframework.Repository\bin\Debug\net5.0\Homework05-DataAccess.EntityFramework.pdb
+C:\Users\pceng\Desktop\Odev5\Homework05\Homework05-DataAccess.Entityframework.Repository\bin\Debug\net5.0\Homework05-Domain.pdb
+C:\Users\pceng\Desktop\Odev5\Homework05\Homework05-DataAccess.Entityframework.Repository\obj\Debug\net5.0\Homework05-DataAccess.Entityframework.Repository.csproj.AssemblyReference.cache
+C:\Users\pceng\Desktop\Odev5\Homework05\Homework05-DataAccess.Entityframework.Repository\obj\Debug\net5.0\Homework05-DataAccess.Entityframework.Repository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pceng\Desktop\Odev5\Homework05\Homework05-DataAccess.Entityframework.Repository\obj\Debug\net5.0\Homework05-DataAccess.Entityframework.Repository.AssemblyInfoInputs.cache
+C:\Users\pceng\Desktop\Odev5\Homework05\Homework05-DataAccess.Entityframework.Repository\obj\Debug\net5.0\Homework05-DataAccess.Entityframework.Repository.AssemblyInfo.cs
+C:\Users\pceng\Desktop\Odev5\Homework05\Homework05-DataAccess.Entityframework.Repository\obj\Debug\net5.0\Homework05-DataAccess.Entityframework.Repository.csproj.CoreCompileInputs.cache
+C:\Users\pceng\Desktop\Odev5\Homework05\Homework05-DataAccess.Entityframework.Repository\obj\Debug\net5.0\Homework05-DataAccess.Entityframework.Repository.csproj.CopyComplete
+C:\Users\pceng\Desktop\Odev5\Homework05\Homework05-DataAccess.Entityframework.Repository\obj\Debug\net5.0\Homework05-DataAccess.Entityframework.Repository.dll
+C:\Users\pceng\Desktop\Odev5\Homework05\Homework05-DataAccess.Entityframework.Repository\obj\Debug\net5.0\ref\Homework05-DataAccess.Entityframework.Repository.dll
+C:\Users\pceng\Desktop\Odev5\Homework05\Homework05-DataAccess.Entityframework.Repository\obj\Debug\net5.0\Homework05-DataAccess.Entityframework.Repository.pdb
