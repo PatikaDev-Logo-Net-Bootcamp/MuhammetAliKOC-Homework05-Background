@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.32014.148
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Homework05-BackgroundWorker", "Homework05-BackgroundWorker\Homework05-BackgroundWorker.csproj", "{FC5B3596-0D24-4292-AF93-6D996A9CC720}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Homework05-BackgroundWorker", "Homework05-BackgroundWorker\Homework05-BackgroundWorker.csproj", "{FC5B3596-0D24-4292-AF93-6D996A9CC720}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Homework05-Domain", "Homework05-Domain\Homework05-Domain.csproj", "{CD2391CC-1152-464B-A870-EC6A9DF1113B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{FC5B3596-0D24-4292-AF93-6D996A9CC720}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FC5B3596-0D24-4292-AF93-6D996A9CC720}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FC5B3596-0D24-4292-AF93-6D996A9CC720}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD2391CC-1152-464B-A870-EC6A9DF1113B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD2391CC-1152-464B-A870-EC6A9DF1113B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD2391CC-1152-464B-A870-EC6A9DF1113B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD2391CC-1152-464B-A870-EC6A9DF1113B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
