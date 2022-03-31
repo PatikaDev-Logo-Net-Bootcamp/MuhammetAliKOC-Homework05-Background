@@ -10,4 +10,8 @@
     <PackageReference Include="Microsoft.Extensions.Hosting" Version="5.0.0" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
   </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Homework05-Business\Homework05-Business.csproj" />
+  </ItemGroup>
 </Project>
