@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Homework05-BackgroundWorker
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Homework05-Domain", "Homework05-Domain\Homework05-Domain.csproj", "{CD2391CC-1152-464B-A870-EC6A9DF1113B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Homework05-DataAccess.EntityFramework", "Homework05-DataAccess.EntityFramework\Homework05-DataAccess.EntityFramework.csproj", "{C11501FA-5E7B-4AAC-8083-7E5266AB9324}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{CD2391CC-1152-464B-A870-EC6A9DF1113B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CD2391CC-1152-464B-A870-EC6A9DF1113B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CD2391CC-1152-464B-A870-EC6A9DF1113B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C11501FA-5E7B-4AAC-8083-7E5266AB9324}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C11501FA-5E7B-4AAC-8083-7E5266AB9324}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C11501FA-5E7B-4AAC-8083-7E5266AB9324}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C11501FA-5E7B-4AAC-8083-7E5266AB9324}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

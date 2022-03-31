@@ -35,7 +35,6 @@ C:\Users\pceng\Desktop\Odev5\Homework05\Homework05-BackgroundWorker\bin\Debug\ne
 C:\Users\pceng\Desktop\Odev5\Homework05\Homework05-BackgroundWorker\bin\Debug\net5.0\Newtonsoft.Json.dll
 C:\Users\pceng\Desktop\Odev5\Homework05\Homework05-BackgroundWorker\bin\Debug\net5.0\System.Diagnostics.EventLog.dll
 C:\Users\pceng\Desktop\Odev5\Homework05\Homework05-BackgroundWorker\bin\Debug\net5.0\runtimes\win\lib\netcoreapp2.0\System.Diagnostics.EventLog.dll
-C:\Users\pceng\Desktop\Odev5\Homework05\Homework05-BackgroundWorker\obj\Debug\net5.0\Homework05-BackgroundWorker.csproj.AssemblyReference.cache
 C:\Users\pceng\Desktop\Odev5\Homework05\Homework05-BackgroundWorker\obj\Debug\net5.0\Homework05-BackgroundWorker.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\pceng\Desktop\Odev5\Homework05\Homework05-BackgroundWorker\obj\Debug\net5.0\Homework05-BackgroundWorker.AssemblyInfoInputs.cache
 C:\Users\pceng\Desktop\Odev5\Homework05\Homework05-BackgroundWorker\obj\Debug\net5.0\Homework05-BackgroundWorker.AssemblyInfo.cs
