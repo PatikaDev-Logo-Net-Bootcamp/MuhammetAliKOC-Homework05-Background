@@ -91,3 +91,5 @@ C:\Users\pceng\Desktop\Odev5\Homework05\Homework05-BackgroundWorker\bin\Debug\ne
 C:\Users\pceng\Desktop\Odev5\Homework05\Homework05-BackgroundWorker\bin\Debug\net5.0\Homework05-DataAccess.Entityframework.Repository.pdb
 C:\Users\pceng\Desktop\Odev5\Homework05\Homework05-BackgroundWorker\bin\Debug\net5.0\Homework05-Domain.pdb
 C:\Users\pceng\Desktop\Odev5\Homework05\Homework05-BackgroundWorker\obj\Debug\net5.0\Homework05-BackgroundWorker.csproj.AssemblyReference.cache
+C:\Users\pceng\Desktop\Odev5\Homework05\Homework05-BackgroundWorker\bin\Debug\net5.0\Humanizer.dll
+C:\Users\pceng\Desktop\Odev5\Homework05\Homework05-BackgroundWorker\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
