@@ -5,7 +5,32 @@
       "ProjectGuid": "fc5b3596-0d24-4292-af93-6d996a9cc720",
       "DisplayName": "Homework05-BackgroundWorker",
       "ColorIndex": 0
+    },
+    "cd2391cc-1152-464b-a870-ec6a9df1113b": {
+      "ProjectGuid": "cd2391cc-1152-464b-a870-ec6a9df1113b",
+      "DisplayName": "Homework05-Domain",
+      "ColorIndex": 1
+    },
+    "c11501fa-5e7b-4aac-8083-7e5266ab9324": {
+      "ProjectGuid": "c11501fa-5e7b-4aac-8083-7e5266ab9324",
+      "DisplayName": "Homework05-DataAccess.EntityFramework",
+      "ColorIndex": 2
+    },
+    "bf984951-70ad-4d2d-bdfd-2aa74c7c091f": {
+      "ProjectGuid": "bf984951-70ad-4d2d-bdfd-2aa74c7c091f",
+      "DisplayName": "Homework05-DataAccess.Entityframework.Repository",
+      "ColorIndex": 3
+    },
+    "f5ae6119-5e37-442f-86f1-c2463cceb095": {
+      "ProjectGuid": "f5ae6119-5e37-442f-86f1-c2463cceb095",
+      "DisplayName": "Homework05-Business",
+      "ColorIndex": 4
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
     }
   },
-  "NextColorIndex": 1
+  "NextColorIndex": 5
 }

@@ -20,11 +20,6 @@ namespace Homework05_Business.Concretes
             this.unitOfWork = unitOfWork;
         }
 
-        public User GetUser(int id)
-        {
-            return repository.Get(id);
-        }
-
         public IQueryable<User> GetAllUserAsQueryable()
         {
             return repository.GetAll();

@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Homework05_DataAccess.Entityframework.Repository.Concretes
 {
-    public class Repository<T> : IRepository<T> where T : BaseEntity
+    public class Repository<T> : IRepository<T> where T : class
     {
         public readonly IUnitOfWork unitOfWork;
         public Repository(IUnitOfWork unitOfWork)
@@ -18,10 +18,10 @@ namespace Homework05_DataAccess.Entityframework.Repository.Concretes
         }
 
 
-        public T Get(int id)
-        {
-            return unitOfWork.Context.Set<T>().Where(x => x.Id == id).FirstOrDefault();
-        }
+        //public T Get(int id)
+        //{
+        //    return unitOfWork.Context.Set<T>().Where(x => x.Id == id).FirstOrDefault();
+        //}
 
         public IQueryable<T> GetAll()
         {
@@ -33,11 +33,23 @@ namespace Homework05_DataAccess.Entityframework.Repository.Concretes
         }
         public void Update(T entity)
         {
-            unitOfWork.Context.Entry(entity).State = EntityState.Modified;
+            //try
+            //{
+            //    unitOfWork.Context.Set<T>().Update(entity);
+            //}
+            //catch (Exception ex)
+            //{
+
+            //    throw ex;
+            //}
+
+            //unitOfWork.Context.Entry<T>(entity).State = EntityState.Detached;
+            unitOfWork.Context.Entry<T>(entity).State = EntityState.Modified;
+
         }
         public void Delete(T entity)
         {
-            unitOfWork.Context.Entry(entity).State = EntityState.Deleted;
+            unitOfWork.Context.Entry<T>(entity).State = EntityState.Deleted;
         }
     }
 }

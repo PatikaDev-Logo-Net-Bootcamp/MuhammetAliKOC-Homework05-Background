@@ -20,7 +20,8 @@ namespace Homework05_BackgroundWorker
         //public IConfiguration Configuration { get; }
         public static void Main(string[] args)
         {
-            CreateHostBuilder(args).Build().Run();
+            CreateHostBuilder(args).UseDefaultServiceProvider(options =>
+                    options.ValidateScopes = false).Build().Run();
         }
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
@@ -28,16 +29,17 @@ namespace Homework05_BackgroundWorker
                 .ConfigureServices((hostContext, services) =>
                 {
 
-                    //services.AddDbContext<AppDbContext>(ServiceLifetime.Transient);
+
+                    services.AddDbContext<AppDbContext>()/* .AddDbContext<AppDbContext>(options => options.UseSqlServer(ConfigSettings.dbSQLEXPRESS)) */
+                    .AddTransient(typeof(IRepository<>), typeof(Repository<>))
+                    .AddTransient<IUnitOfWork, UnitOfWork>()
+                    .AddTransient<IUserService, UserService>()//;          
+                    .AddHostedService<Worker>();
 
 
-                    /*services.AddDbContext<AppDbContext>(options => options.UseSqlServer(ConfigSettings.dbSQLEXPRESS));
-
-                    services.AddTransient<IUnitOfWork, UnitOfWork>();
-                    services.AddTransient(typeof(IRepository<>), typeof(Repository<>));
-                    services.AddTransient<IUserService, UserService>();*/
-
-                    services.AddHostedService<Worker>();
                 });
+
+
+          
     }
 }

@@ -9,7 +9,6 @@ namespace Homework05_Business.Abstracts
 {
     public interface IUserService
     {
-        User GetUser(int id);
         IQueryable<User> GetAllUserAsQueryable();
 
         void AddUser(User user);

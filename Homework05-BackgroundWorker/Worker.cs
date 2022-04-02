@@ -53,19 +53,21 @@ namespace Homework05_BackgroundWorker
                     var userJson = await response.Content.ReadAsStringAsync();
                     List<UserDTO> result = JsonConvert.DeserializeObject<List<UserDTO>>(userJson);
 
-                    IQueryable<UserDTO> cameUsers = result.AsQueryable();//sistemi yormamak için queryable olarak join yapacaðým.
-                    IQueryable<User> users = _userService.GetAllUserAsQueryable();
+                    var cameUsers = result;
+                    var users = _userService.GetAllUserAsQueryable().ToList();
 
-
-                    var crossJoinResult = from cameUser in cameUsers
-                                          from user in users
+                    var leftJoinForAdd = from cameUser in cameUsers 
+                                          join user in users on cameUser.Id equals user.Id  
+                                          into total
+                                          from userLeft in total.DefaultIfEmpty()
                                           select new
                                           {
                                               CameUser = cameUser,
-                                              User = user
+                                              User = userLeft
                                           };
+
                     //json içinde bulunan ancak veritabanýnda bulunmayan veriler. Bunlarý Veritabanýna eklemeliyiz.
-                    var addusers = crossJoinResult
+                    var addusers = leftJoinForAdd
                                     .Where(x => x.User == null)
                                     .Select(x => new User()
                                     {
@@ -74,38 +76,62 @@ namespace Homework05_BackgroundWorker
                                         Body = x.CameUser.Body,
                                         Title = x.CameUser.Title
                                     }
-                                            ).ToList();
+                                    ).ToList();
+
+
+
+
+                    var joinForUpdate = from cameUser in cameUsers
+                                         join user in users on cameUser.Id equals user.Id
+                                         select new
+                                         {
+                                             CameUser = cameUser,
+                                             User = user
+                                         };
+
                     //Hem json içinde hemde veritabanýnda bulunan veriler. Bunlarý Veritabanýna güncellemeliyiz Jsondan nasýl geliyorlarsa.
-                    var updateusers = crossJoinResult
-                                    .Where(x => x.User != null && x.CameUser !=null)
-                                    .Select(x => new User()
+                    var updateusers = joinForUpdate
+                                    .Where(x => x.User != null && x.CameUser != null)
+                                    /*.Select(x => new User()
                                     {
                                         Id = x.CameUser.Id,
                                         UserId = x.CameUser.UserId,
                                         Body = x.CameUser.Body,
                                         Title = x.CameUser.Title
-                                    }
-                                            ).ToList();
+                                    })*/
+                                    .Select( x=> { x.User.UserId = x.CameUser.UserId; x.User.Title = x.CameUser.Title; x.User.Body = x.CameUser.Body; return x.User; } )
+                                            .ToList();
+
+
+                    var leftJoinForDelete = from user in users
+                                            join cameUser in cameUsers on user.Id equals cameUser.Id
+                                         into total
+                                         from userLeft in total.DefaultIfEmpty()
+                                         select new
+                                         {
+                                             CameUser = userLeft,
+                                             User = user
+                                         };
 
 
                     //Json da olup, veritabanýnda olmayan veriler.
-                    var deleteusers = crossJoinResult
+                    var deleteusers = leftJoinForDelete
                                     .Where(x => x.CameUser == null)
                                     .Select(x => x.User).ToList();
 
 
-                    //Veritabaný iþlemleri burada yapýlýyor.
+
                     _userService.AddUsers(addusers);
                     _userService.UpdateUsers(updateusers);
                     _userService.DeleteUsers(deleteusers);
-                     
+
                 }
                 else
                 {
                     _logger.LogError(@"https://jsonplaceholder.typicode.com/posts is down Status Code {StatusCode}", response.StatusCode);
                 }
-                /*1 dakika bekle, sonra devam et. 1 dakikada bir çalýþmasý için!*/
-                await Task.Delay(60000, stoppingToken);
+                //1 dakika bekle, sonra devam et. 1 dakikada bir çalýþmasý için!
+                await Task.Delay(20000, stoppingToken);
             }
         }
     }
