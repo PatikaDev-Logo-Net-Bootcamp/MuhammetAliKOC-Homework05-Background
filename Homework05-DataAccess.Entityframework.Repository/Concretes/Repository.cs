@@ -29,27 +29,114 @@ namespace Homework05_DataAccess.Entityframework.Repository.Concretes
         }
         public void Add(T entity)
         {
-            unitOfWork.Context.Set<T>().Add(entity);
+            try
+            {
+               //unitOfWork.Context.Entry<T>(entity).State = EntityState.Detached;
+                unitOfWork.Context.Set<T>().Add(entity);
+                //unitOfWork.Context.Entry<T>(entity).State = EntityState.Added;
+            }
+            catch (Exception e )
+            {
+
+                throw e;
+            }
+           
+        }
+
+        public void AddRange(List<T> entities)
+        {
+            try
+            {
+                //unitOfWork.Context.Entry<T>(entity).State = EntityState.Detached;
+                unitOfWork.Context.ChangeTracker.Clear();
+                unitOfWork.Context.Set<T>().AddRange(entities);
+                //unitOfWork.Context.ChangeTracker.DetectChanges();
+                //unitOfWork.Context.Entry<T>(entity).State = EntityState.Added;
+            }
+            catch (Exception e)
+            {
+
+                throw e; 
+            }
+
         }
         public void Update(T entity)
         {
-            //try
-            //{
-            //    unitOfWork.Context.Set<T>().Update(entity);
-            //}
-            //catch (Exception ex)
-            //{
+            try
+            {
+                //unitOfWork.Context.Entry<T>(entity).State = EntityState.Modified;
+                //unitOfWork.Context.Set<T>().Update(entity);
+                unitOfWork.Context.Attach(entity).State = EntityState.Modified;
 
-            //    throw ex;
-            //}
+               // Attach
 
-            //unitOfWork.Context.Entry<T>(entity).State = EntityState.Detached;
-            unitOfWork.Context.Entry<T>(entity).State = EntityState.Modified;
+            }
+            catch (Exception e)
+            {
+
+                throw e;
+            }
+      
 
         }
+
+        public void UpdateRange(List<T> entities)
+        {
+            try
+            {
+                //unitOfWork.Context.Entry<T>(entity).State = EntityState.Modified;
+                unitOfWork.Context.ChangeTracker.Clear();
+                unitOfWork.Context.Set<T>().UpdateRange(entities);
+                //unitOfWork.Context.Attach(entity).State = EntityState.Modified;
+
+                // Attach
+
+                //unitOfWork.Context.Entry<T>(entities).State = EntityState.Modified;
+
+            }
+            catch (Exception e)
+            {
+
+                throw e;
+            }
+
+
+        }
+
+
         public void Delete(T entity)
         {
-            unitOfWork.Context.Entry<T>(entity).State = EntityState.Deleted;
+            try
+            {
+                unitOfWork.Context.Entry<T>(entity).State = EntityState.Deleted;
+            }
+            catch (Exception e)
+            {
+
+                throw e;
+            }
+            
         }
+
+        public void DeleteRange(List<T> entities)
+        {
+            try
+            {
+                // unitOfWork.Context.Entry<T>(entity).State = EntityState.Deleted;
+                unitOfWork.Context.ChangeTracker.Clear();
+                unitOfWork.Context.Set<T>().RemoveRange(entities);
+            }
+            catch (Exception e)
+            {
+
+                throw e;
+            }
+
+        }
+
+
+
+
+
     }
 }

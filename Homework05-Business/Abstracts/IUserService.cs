@@ -1,4 +1,5 @@
-﻿using Homework05_Domain.Entities;
+﻿using Homework05_Business.DTO;
+using Homework05_Domain.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,12 +13,12 @@ namespace Homework05_Business.Abstracts
         IQueryable<User> GetAllUserAsQueryable();
 
         void AddUser(User user);
-        void AddUsers(List<User> users);
+        void AddUsers(List<UserDTO> cameUsers);
 
         void UpdateUser(User user);
-        void UpdateUsers(List<User> users);
+        void UpdateUsers(List<UserDTO> cameUsers);
 
         void DeleteUser(User user);
-        void DeleteUsers(List<User> users);
+        void DeleteUsers(List<UserDTO> cameUsers);
     }
 }

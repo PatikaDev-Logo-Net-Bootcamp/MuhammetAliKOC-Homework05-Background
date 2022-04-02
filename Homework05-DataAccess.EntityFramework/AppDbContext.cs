@@ -13,7 +13,7 @@ namespace Homework05_DataAccess.EntityFramework
     {
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
         {
-          
+       
         }
         public DbSet<User> Users { get; set; }
 
@@ -26,6 +26,7 @@ namespace Homework05_DataAccess.EntityFramework
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlServer("server=DESKTOP-B6UHANI\\SQLEXPRESS;database=DBBackgroundWorker;Trusted_Connection=true");
+            //.UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking);
             base.OnConfiguring(optionsBuilder);
         }
     }

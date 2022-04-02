@@ -14,5 +14,9 @@ namespace Homework05_DataAccess.Entityframework.Repository.Abstracts
         void Add(T entity);
         void Update(T entity);
         void Delete(T entity);
+
+        void AddRange(List<T> entities);
+        void UpdateRange(List<T> entities);
+        void DeleteRange(List<T> entities);
     }
 }

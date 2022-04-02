@@ -1,4 +1,5 @@
 ﻿using Homework05_Business.Abstracts;
+using Homework05_Business.DTO;
 using Homework05_DataAccess.Entityframework.Repository.Abstracts;
 using Homework05_Domain.Entities;
 using System;
@@ -31,12 +32,34 @@ namespace Homework05_Business.Concretes
             repository.Add(user);
             unitOfWork.Commit();
         }
-        public void AddUsers(List<User> users)
+        public void AddUsers(List<UserDTO> cameUsers)
         {
-            foreach (var user in users)
-            {
-                repository.Add(user);
-            }           
+            var users = GetAllUserAsQueryable().ToList();
+
+            var leftJoinForAdd = from cameUser in cameUsers
+                                 join user in users on cameUser.Id equals user.Id
+                                 into total
+                                 from userLeft in total.DefaultIfEmpty()
+                                 select new
+                                 {
+                                     CameUser = cameUser,
+                                     User = userLeft
+                                 };
+
+            //json içinde bulunan ancak veritabanında bulunmayan veriler. Bunları Veritabanına eklemeliyiz.
+            var addusers = leftJoinForAdd
+                            .Where(x => x.User == null)
+                            .Select(x => new User()
+                            {
+                                Id = x.CameUser.Id,
+                                UserId = x.CameUser.UserId,
+                                Body = x.CameUser.Body,
+                                Title = x.CameUser.Title
+                            }
+                            ).ToList();
+     
+
+            repository.AddRange(addusers);
             unitOfWork.Commit();
         }
 
@@ -46,12 +69,25 @@ namespace Homework05_Business.Concretes
             unitOfWork.Commit();
         }
 
-        public void UpdateUsers(List<User> users)
+        public void UpdateUsers(List<UserDTO> cameUsers)
         {
-            foreach (var user in users)
-            {
-                repository.Update(user);
-            }
+            var users = GetAllUserAsQueryable().ToList();
+
+            var joinForUpdate = from cameUser in cameUsers
+                                join user in users on cameUser.Id equals user.Id
+                                select new
+                                {
+                                    CameUser = cameUser,
+                                    User = user
+                                };
+
+            //Hem json içinde hemde veritabanında bulunan veriler. Bunları Veritabanına güncellemeliyiz Jsondan nasıl geliyorlarsa.
+            var updateusers = joinForUpdate
+                            .Where(x => x.User != null && x.CameUser != null)
+                            .Select(x => { x.User.UserId = x.CameUser.UserId; x.User.Title = x.CameUser.Title; x.User.Body = x.CameUser.Body; return x.User; })
+                                    .ToList();
+
+            repository.UpdateRange(updateusers);
             unitOfWork.Commit();
         }
 
@@ -61,13 +97,30 @@ namespace Homework05_Business.Concretes
             unitOfWork.Commit();
         }
 
-        public void DeleteUsers(List<User> users)
+        public void DeleteUsers(List<UserDTO> cameUsers)
         {
-            foreach (var user in users)
-            {
-                repository.Delete(user);
-            }
+            var users = GetAllUserAsQueryable().ToList();
+
+            var leftJoinForDelete = from user in users
+                                    join cameUser in cameUsers on user.Id equals cameUser.Id
+                                 into total
+                                    from userLeft in total.DefaultIfEmpty()
+                                    select new
+                                    {
+                                        CameUser = userLeft,
+                                        User = user
+                                    };
+
+
+            //Json da olup, veritabanında olmayan veriler.
+            var deleteusers = leftJoinForDelete
+                            .Where(x => x.CameUser == null)
+                            .Select(x => x.User).ToList();
+
+            repository.DeleteRange(deleteusers);
             unitOfWork.Commit();
         }
+
+ 
     }
 }

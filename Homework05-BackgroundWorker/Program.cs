@@ -28,12 +28,10 @@ namespace Homework05_BackgroundWorker
             Host.CreateDefaultBuilder(args)
                 .ConfigureServices((hostContext, services) =>
                 {
-
-
                     services.AddDbContext<AppDbContext>()/* .AddDbContext<AppDbContext>(options => options.UseSqlServer(ConfigSettings.dbSQLEXPRESS)) */
                     .AddTransient(typeof(IRepository<>), typeof(Repository<>))
                     .AddTransient<IUnitOfWork, UnitOfWork>()
-                    .AddTransient<IUserService, UserService>()//;          
+                    .AddTransient<IUserService, UserService>()
                     .AddHostedService<Worker>();
 
 
