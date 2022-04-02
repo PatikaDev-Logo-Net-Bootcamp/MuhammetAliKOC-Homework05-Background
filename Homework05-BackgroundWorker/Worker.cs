@@ -1,12 +1,9 @@
 using Homework05_Business.Abstracts;
 using Homework05_Business.DTO;
-using Homework05_Domain.Entities;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
-using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Net.Http;
 using System.Threading;
 using System.Threading.Tasks;
